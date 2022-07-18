@@ -1,42 +1,91 @@
-
-nav {
-    background-color: #FFF0ED;
-}
-.intro {
-    background-color: #FFF0ED;
-}
-button {
+.btn {
     background-color: #5BACC3;
-    color: white;
+    color: white; 
+    padding: 5px 20px;
+    margin: 0px;
 }
-.card p {
-    color: #5BACC3;
+.panel__img--banner{
+    height: 25rem;
 }
-footer {
-    background-color: #FFF0ED;
+.panel__col--text {
+    padding-left: 40px;
 }
-img nav{
-    height: 10rem;
+.panel__descrip {
+    padding-bottom: 5%;
+    width: 50%;
 }
-.intro img{
-    height: 20rem;
-}
-.ourProducts img {
-    height: 10rem;
-}
-.discount p {
+.panel__discount {
     background-color: #393939;
     color: white;
-    font-size: 1.5rem;
-    margin-top: 0rem;
-    padding: 0.5rem;
-    margin-right: 20%;
+    font-size: 1.75rem;
+    padding: 1rem;
+    margin: 10% 20%;
     text-align: center;
     font-weight: 400;
 }
-span {
-    font-weight: 700;
+.panel__title {
+    display: block;
 }
-p {
+.panel--rose .panel__descrip{
+    font-size: 0.75rem;
+}
+.panel.panel--rose {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.panel__col {
+    text-align: left;
+}
+.panel--grey{
+    text-align: center;
+    align-items: center;
+    padding: 30px 0px;
+}
+.panel--grey img {
+    height: 10rem;
+}
+.card {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 30px;
+    margin: 25px;
+    border-radius: 5%;
+    box-shadow: 0px 5px 5px #393939;
+    width: 150px;
+    height: 250px;
+    text-align: center;
+}
+.card__subtitle {
+    padding: 15px 0px 10px 0px;
+    font-size: 1.25rem;
+}
+.card__price {
+    color: #5BACC3;
     font-size: 1rem;
+    padding: 5px;
 }
+span {
+    font-weight: 900;
+}
+a:hover.btn {
+    color: black;
+}
+.footer {
+    background-color:#FFF0ED;
+    padding: 20px 0px;
+    text-align: center;
+}
+.footer__section {
+    display: inline-block;
+    padding-right: 10%;
+    text-align: left;
+    vertical-align: top;
+}
+.footer__subtitle {
+    padding: 15px 0px;
+}
+.footer__info {
+    font-size: .75rem;
+    padding: 5px 0px;
+}
+

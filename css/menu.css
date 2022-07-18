@@ -1,48 +1,42 @@
-.menuList li{
-    text-decoration: none;
-    color: white;
-    text-transform:uppercase;
+main {
+    text-align: center;
 }
-.menuTitle {
+.banner {
     background-image: url("../assets/images/coffee-circle.jpg");
     background-size: cover;
     background-position: 100%;
     padding-bottom: 35%;
+    text-align: center;
 }
-.title {
+.banner__box {
     background-color: #393939;
     color:white;
     display:inline-block;
     padding: 0px 30px 50px;
 }
-.title h1 {
+.banner__title {
     margin: 0px;
 }
-.hotDrinks {
-    background-color: #FFF0ED;
-}
-.coldDrinks {
-    background-color: #F7F7F7;
-}
-.Pastries {
-    background-color: #FFF0ED;
-}
-.menuList {
+.sub-nav__list {
     background-color: #393939;
     text-align: center;
+    padding: 15px;
 }
-.price {
-    color: #5BACC3;
-    font-size: 1rem;
+.sub-nav__list-item {
+    display: inline;
+    text-align: center;
+    padding: 0px 15px ;
+    border-left: 3px solid #5BACC3;
+    text-decoration: none;
+    color: white;
+    text-transform:uppercase;
 }
-.descript {
+.panel__descrip {
     font-size: 1rem;
     font-style: italic;
     text-align: center;
-    width: 35%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 5px;
 }
-main {
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-}
+
