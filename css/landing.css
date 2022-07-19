@@ -1,9 +1,19 @@
+/* 
+button specifics for index
+ */
 .btn {
     background-color: #5BACC3;
     color: white; 
     padding: 5px 20px;
     margin: 0px;
 }
+a:hover.btn {
+    color: black;
+}
+
+/* 
+panel general
+ */
 .panel__img--banner{
     height: 25rem;
 }
@@ -13,28 +23,23 @@
 .panel__descrip {
     padding-bottom: 5%;
     width: 50%;
+    font-size: 0.75rem;
 }
 .panel__discount {
     background-color: #393939;
     color: white;
     font-size: 1.75rem;
     padding: 1rem;
-    margin: 10% 20%;
+    margin: 5% 20%;
     text-align: center;
     font-weight: 400;
 }
 .panel__title {
     display: block;
 }
-.panel--rose .panel__descrip{
-    font-size: 0.75rem;
-}
-.panel.panel--rose {
+.panel--rose {
     display: flex;
-    flex-wrap: nowrap;
-}
-.panel__col {
-    text-align: left;
+    justify-items: center;
 }
 .panel--grey{
     text-align: center;
@@ -44,32 +49,101 @@
 .panel--grey img {
     height: 10rem;
 }
+.panel__img  {
+    height: 5vh;
+    padding: 20px 0px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.panel.panel--white {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+.panel--info {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.panel__div--background {
+    background-image: url("/assets/images/coldbrewbackground.png");
+    width: 300px;
+    background-size: cover;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel__col--img{
+    height: 80%;
+}
+
+/* 
+card and card container css
+  */
 .card {
     display: inline-block;
     border: 1px solid white;
-    padding: 30px;
-    margin: 25px;
-    border-radius: 5%;
+    margin: 20px;
+    border-radius: 2%;
     box-shadow: 0px 5px 5px #393939;
-    width: 150px;
+    width: 200px;
     height: 250px;
     text-align: center;
+    padding-top: 20px;
+    background-color: white;
+}
+.card__image {
+    background-color: white;
 }
 .card__subtitle {
     padding: 15px 0px 10px 0px;
-    font-size: 1.25rem;
+    font-size: 1rem;
+    text-align: left;
 }
 .card__price {
     color: #5BACC3;
     font-size: 1rem;
-    padding: 5px;
+    padding: 10px;
+    text-align: right;
+    font-weight: 600;
 }
+.card__descrip {
+    font-size: .6rem;
+    text-align: left;
+    color: #909090;
+}
+.card__header {
+    padding-left: 10px;
+    background-color: #FFF0ED;
+}
+.card__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 32px;
+    border-radius: 2%;
+    background-color: #FFF0ED;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+/* heavy font-weight for discount section */
 span {
     font-weight: 900;
 }
-a:hover.btn {
-    color: black;
-}
+
+/* 
+footer specifics 
+*/
 .footer {
     background-color:#FFF0ED;
     padding: 20px 0px;
@@ -88,4 +162,6 @@ a:hover.btn {
     font-size: .75rem;
     padding: 5px 0px;
 }
+
+
 

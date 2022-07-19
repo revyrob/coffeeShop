@@ -1,3 +1,6 @@
+/* 
+general specifics for global elements 
+*/
 * {
     margin: 0px;
     padding: 0px;
@@ -11,20 +14,22 @@ h1, h2, h3 {
 a {
     text-decoration: none;
 }
-.navbar {
-    background-color: #FFF0ED;
-    display: flex;
-    padding: 5px;
-    align-items: center;
+body {
+    font-family: 'Open Sans';
 }
-.navbar__list {
-    text-align: center;
-    margin-top: 7px;
-    padding: 15px;
+
+/* 
+navbar css 
+*/
+.primary__header {
+    display: flex;
+    background-color:#FFF0ED;
+    padding: 10px;
+}
+.navbar {
+    margin-left: auto; 
 }
 .navbar__list-item {
-    display: inline;
-    text-align: center;
     padding: 0px 15px ;
 }
 .navbar__image{
@@ -33,12 +38,19 @@ a {
 .navbar__title {
     font-size: 1.75rem;
 }
-body {
-    font-family: 'Open Sans';
+.navbar__list {
+    margin-top: 7px;
+    display: flex;
+    justify-content:end;
+    align-items: center;
 }
-.navbar a {
+.primary__header a {
     color: #393939;
 }
+
+/* 
+panel specifics global 
+*/
 .panel {
     padding: 10px;
     width: 100%;
@@ -62,6 +74,13 @@ body {
 .panel--grey {
     background-color: #F7F7F7;
 }
+.panel--white {
+    background-color: white;
+}
+
+/* 
+anchor tags hover global 
+*/
 a:hover {
     color: #5BACC3;
 }

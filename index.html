@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
         
         <!--stylesheets global and index-->
         <link rel="stylesheet" href="./css/normalize.css">
@@ -16,10 +16,11 @@
     </head>
     
     <body>
-        <header>
-            <nav class="navbar">
-                <img class="navbar__image" src="../assets/images/coffee-beans-logo-and-footer.svg">
-                <h2 class="navbar__title"><a href="index.html">nitro</h2>
+        <header class="primary__header">
+            
+            <img class="navbar__image" src="../assets/images/coffee-beans-logo-and-footer.svg" alt="coffee beans">
+            <h2 class="navbar__title"><a href="index.html">nitro</h2>
+                <nav class="navbar">
                     <ul class="navbar__list">
                         <li class="navbar__list-item"><a href="index.html">ABOUT</a></li>
                         <li class="navbar__list-item"><a href="./pages/menu.html">MENU</a></li>
@@ -47,25 +48,36 @@
             
             <section class="panel panel--grey">
                 <h2 class="panel__title">Our Products</h2>
-                <div class="card">
-                    <img class="card__image" src="./assets/images/coffeebeans-hero.png" alt="coffeeBeans">
-                    <div class="card__container">
-                        <h3 class="card__subtitle">Coffee Beans</h3>
-                        <p class="card__price">$18.99</p>
+                <div class="container">
+                    <div class="card">
+                        <img class="card__image" src="./assets/images/coffeebeans-hero.png" alt="coffee beans">
+                        <div class="card__container">
+                            <div class="card__header">
+                                <h3 class="card__subtitle">Coffee Beans</h3>
+                                <p class="card__descrip">Pack of 3</p>
+                            </div>
+                            <p class="card__price">$18.99</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img class="card__image" src="./assets/images/coldbrew.png" alt="coldBrew">
-                    <div class="card__container">
-                        <h3 class="card__subtitle">Cold Brew</h3>
-                        <p class="card__price">$4.99</p>
+                    <div class="card">
+                        <img class="card__image" src="./assets/images/coldbrew.png" alt="cold Brew">
+                        <div class="card__container">
+                            <div class="card__header">
+                                <h3 class="card__subtitle">Cold Brew</h3>
+                                <p class="card__descrip">1 can</p>
+                            </div>
+                            <p class="card__price">$4.99</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img class="card__image" src="./assets/images/inhousebrew.png" alt="in-houseBrew">
-                    <div class="card__container">
-                        <h3 class="card__subtitle">In-house Brew</h3>
-                        <p class="card__price">$2.99</p>
+                    <div class="card">
+                        <img class="card__image" src="./assets/images/inhousebrew.png" alt="in-houseBrew">
+                        <div class="card__container">
+                            <div class="card__header">
+                                <h3 class="card__subtitle">In-house Brew</h3>
+                                <p class="card__descrip">1 cup</p>
+                            </div>
+                            <p class="card__price">$2.99</p>
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -74,8 +86,34 @@
             </div>
         </section>
         
-        <section class="panel__discount">
-            <p class="'panel__discount">Get 20% off your first order with code: <span>FirstNitro</span></p>
+        <section class="panel panel--white">
+            <!-- work on the padding and space between -->
+            
+                <div class="panel__col panel--info">
+                    <h2 class="panel__title">We're Different</h2>
+                    <p class="panel__descrip">We grow and roast our beans. Every bean, every cup, every 
+                        step of the way, we strive for excellence.
+                    </p>
+                    <div class="panel__img">
+                        <img src="./assets/images/planting.svg" alt="coffee beans planted">
+                        <img src="./assets/images/coffee-beans.svg" alt="coffee beans">
+                        <img src="./assets/images/coffee-cup.svg" alt="coffee cup">
+                    </div>
+                    <div>
+                        <a class="btn" href="./pages/menu.html">LEARN MORE</a>
+                    </div>
+                </div>
+                <!-- need to fix background -->
+                <div class="panel__col panel__div--background">
+                    <img class="panel__col--img" src="./assets/images/tiltedcan.png" alt="cold brew coffee">
+                </div>
+            
+        </section>
+        
+        <section class="panel">
+            <div class="panel__discount">
+                <p class="'panel__discount">Get 20% off your first order with code: <span>FirstNitro</span></p>
+            </div>
         </section>
         
         <footer class="footer">

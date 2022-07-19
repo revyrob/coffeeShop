@@ -1,22 +1,35 @@
 main {
     text-align: center;
 }
+
+/* 
+menu banner section 
+still having troubles making banner__title stay in the middle of the banner 
+background when chaning responsive screens
+*/
 .banner {
     background-image: url("../assets/images/coffee-circle.jpg");
-    background-size: cover;
+    background-size:cover;
     background-position: 100%;
-    padding-bottom: 35%;
+    /* height: 90vh; */
+    height: 100vh;
+    position: relative;
     text-align: center;
-}
-.banner__box {
-    background-color: #393939;
-    color:white;
-    display:inline-block;
-    padding: 0px 30px 50px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
 }
 .banner__title {
-    margin: 0px;
+    background-color: #393939;
+    color:white;
+    position: absolute;
+    /* width: 100px; */
+    padding: 30px 20px;
 }
+
+/* 
+sub nav in menu  
+*/
 .sub-nav__list {
     background-color: #393939;
     text-align: center;
@@ -31,6 +44,10 @@ main {
     color: white;
     text-transform:uppercase;
 }
+
+/* 
+panel description in menu
+ */
 .panel__descrip {
     font-size: 1rem;
     font-style: italic;
