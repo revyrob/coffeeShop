@@ -16,36 +16,39 @@
     </head>
     
     <body>
+        <!-- navbar -->
         <header class="primary__header">
-            
-            <img class="navbar__image" src="../assets/images/coffee-beans-logo-and-footer.svg" alt="coffee beans">
-            <h2 class="navbar__title"><a href="index.html">nitro</h2>
-                <nav class="navbar">
-                    <ul class="navbar__list">
-                        <li class="navbar__list-item"><a href="index.html">ABOUT</a></li>
-                        <li class="navbar__list-item"><a href="./pages/menu.html">MENU</a></li>
-                        <li class="navbar__list-item"><a href="./pages/menu.html">SHOP NOW</a></li>
-                    </ul>
-                </nav>
-            </header>
-            
-            <section class="panel panel--rose">
-                <div class="panel__col">
-                    <div class="panel__col--text">
-                        <h1 class="panel__title">Nitro Coffee</h1>
-                        <p class="panel__descrip">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of
+            <img class="navbar__image" src="./assets/images/coffee-beans-logo-and-footer.svg" alt="coffee beans">
+            <h2 class="navbar__title"><a href="index.html">nitro</a></h2>
+            <nav class="navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__list-item"><a href="index.html">ABOUT</a></li>
+                    <li class="navbar__list-item"><a href="./pages/menu.html">MENU</a></li>
+                    <li class="navbar__list-item"><a href="./pages/menu.html">SHOP NOW</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <!-- hero panel section -->
+            <section class="hero panel--rose">
+                <div class="hero__col">
+                    <div class="hero__col--text">
+                        <h1 class="hero__title">Nitro Coffee</h1>
+                        <div class="hero__descrip">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of
                             the berries from certain Coffea species.
-                        </p>
-                        <div>
+                        </div>
+                        <div class="btn__border">
                             <a class="btn" href="./pages/menu.html">SHOP NOW</a>
                         </div>
                     </div>
                 </div>
-                <div class="panel__col">
-                    <img class="panel__img--banner" src="./assets/images/coffeebeans-hero.png" alt="coffee bag">
+                <div class="hero__col">
+                    <img class="hero__img--banner" src="./assets/images/coffeebeans-hero.png" alt="coffee bag">
                 </div>    
             </section>
             
+            <!-- panel section with cards -->
             <section class="panel panel--grey">
                 <h2 class="panel__title">Our Products</h2>
                 <div class="container">
@@ -81,14 +84,14 @@
                     </div>
                 </div>
                 <div>
-                    <a class="btn" href="./pages/menu.html">VIEW ALL</a>
+                    <div class="btn__border btn--view">
+                        <a class="btn" href="./pages/menu.html">VIEW ALL</a>
+                    </div>
                 </div>
-            </div>
-        </section>
-        
-        <section class="panel panel--white">
-            <!-- work on the padding and space between -->
+            </section>
             
+            <section class="panel panel--white">
+                <!-- work on the padding and space between -->
                 <div class="panel__col panel--info">
                     <h2 class="panel__title">We're Different</h2>
                     <p class="panel__descrip">We grow and roast our beans. Every bean, every cup, every 
@@ -100,39 +103,42 @@
                         <img src="./assets/images/coffee-cup.svg" alt="coffee cup">
                     </div>
                     <div>
-                        <a class="btn" href="./pages/menu.html">LEARN MORE</a>
+                        <div class="btn__border">
+                            <a class="btn" href="./pages/menu.html">LEARN MORE</a>
+                        </div>
                     </div>
                 </div>
                 <!-- need to fix background -->
                 <div class="panel__col panel__div--background">
                     <img class="panel__col--img" src="./assets/images/tiltedcan.png" alt="cold brew coffee">
                 </div>
+            </section>
             
-        </section>
-        
-        <section class="panel">
-            <div class="panel__discount">
-                <p class="'panel__discount">Get 20% off your first order with code: <span>FirstNitro</span></p>
-            </div>
-        </section>
+            <!-- discount section -->
+            <section class="panel">
+                <div class="panel__discount">
+                    Get 20% off your first order with code: <span>FirstNitro</span>
+                </div>
+            </section>
+        </main>
         
         <footer class="footer">
             <div class="footer__section">
-                <h3 class="footer__subtitle">Address</h3>
-                <p class="footer__info">503 Broadway Penthouse</p>
-                <p class="footer__info">New York</p>
+                <div class="footer__subtitle">Address</div>
+                <div class="footer__info">503 Broadway Penthouse</div>
+                <div class="footer__info">New York</div>
             </div>
             <div class="footer__section">
-                <h3 class="footer__subtitle">Hours</h3>
-                <p class="footer__info"><span>Monday - Friday:</span> 9am - 7pm</p>
-                <p class="footer__info"><span>Saturday - Sunday:</span> 10am - 5pm</p>
+                <div class="footer__subtitle">Hours</div>
+                <div class="footer__info"><span>Monday - Friday:</span> 9am - 7pm</div>
+                <div class="footer__info"><span>Saturday - Sunday:</span> 10am - 5pm</div>
             </div>
             <div class="footer__section">
-                <h3 class="footer__subtitle">Social</h3>
-                <a class="footer__img" href="http://facebook.com"><img src="./assets/logos/Facebook-Icon.svg"
+                <div class="footer__subtitle">Social</div>
+                <a class="footer__img" href="http://facebook.com" target="_blank"><img src="./assets/logos/facebook-icon.svg"
                     alt="facebook"></a>
-                    <a class="footer__img" href="http://yelp.com"><img src="./assets/logos/Yelp-Icon.svg" alt="Yelp"></a>
-                    <a class="footer__img" href="http://instagram.com"><img src="assets/logos/Instagram-Icon.svg" alt="Instagram"></a>
+                    <a class="footer__img" href="http://yelp.com" target="_blank"><img src="./assets/logos/yelp-icon.svg" alt="Yelp"></a>
+                    <a class="footer__img" href="http://instagram.com" target="_blank"><img src="assets/logos/instagram-icon.svg" alt="Instagram"></a>
                 </div>
             </footer>
             

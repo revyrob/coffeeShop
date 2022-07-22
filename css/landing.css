@@ -2,29 +2,52 @@
 button specifics for index
  */
 .btn {
-    background-color: #5BACC3;
-    color: white; 
-    padding: 5px 20px;
-    margin: 0px;
+    border: 2px solid #393939; 
+    color:white;
+    position: relative;
+    padding: 10px 40px;
+    bottom: 5px;
+    right: 5px;
 }
 a:hover.btn {
     color: black;
 }
-
+.btn__border {
+    background-color: #5BACC3;   
+    position: absolute;
+    padding: 12px 0px;
+    
+}
+.btn--view {
+    display: inline-block;
+}
 /* 
-panel general
+hero section
  */
-.panel__img--banner{
+.hero__img--banner{
     height: 25rem;
 }
-.panel__col--text {
-    padding-left: 40px;
+.hero.panel--rose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.panel__descrip {
+.hero__descrip {
     padding-bottom: 5%;
     width: 50%;
     font-size: 0.75rem;
 }
+.hero {
+    padding: 10px;
+    width: 100%;
+}
+.hero__title {
+    padding: 10px 0px;
+    font-size: 2rem;
+}
+
+/* 
+panel section */
 .panel__discount {
     background-color: #393939;
     color: white;
@@ -36,10 +59,6 @@ panel general
 }
 .panel__title {
     display: block;
-}
-.panel--rose {
-    display: flex;
-    justify-items: center;
 }
 .panel--grey{
     text-align: center;
@@ -71,17 +90,25 @@ panel general
 }
 .panel__div--background {
     background-image: url("/assets/images/coldbrewbackground.png");
-    width: 300px;
+    height: 370px;
+    width: 340px;
     background-size: cover;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 .panel__col--img{
-    height: 80%;
+    height: 240px;
+    border: 5px solid #5BACC3;
+    padding: 60px 100px;
+    position:absolute;
+    bottom: 20px;
+    right: 20px;
 }
 
+.panel__descrip {
+    padding-bottom: 5%;
+    width: 50%;
+    font-size: 0.75rem;
+}
 /* 
 card and card container css
   */
@@ -90,7 +117,8 @@ card and card container css
     border: 1px solid white;
     margin: 20px;
     border-radius: 2%;
-    box-shadow: 0px 5px 5px #393939;
+    box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+    
     width: 200px;
     height: 250px;
     text-align: center;
@@ -125,7 +153,8 @@ card and card container css
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 32px;
+    padding-bottom: 16px;
+    padding-top: 16px;
     border-radius: 2%;
     background-color: #FFF0ED;
 }

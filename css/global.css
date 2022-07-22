@@ -24,7 +24,7 @@ navbar css
 .primary__header {
     display: flex;
     background-color:#FFF0ED;
-    padding: 10px;
+    padding: 20px;
 }
 .navbar {
     margin-left: auto; 
@@ -33,7 +33,7 @@ navbar css
     padding: 0px 15px ;
 }
 .navbar__image{
-    height: 7vh;
+    height: 30px;
 }
 .navbar__title {
     font-size: 1.75rem;
@@ -52,7 +52,7 @@ navbar css
 panel specifics global 
 */
 .panel {
-    padding: 10px;
+    padding: 10px 0px 40px 0px;
     width: 100%;
 }
 .panel__title {

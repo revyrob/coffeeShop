@@ -13,19 +13,27 @@ background when chaning responsive screens
     background-position: 100%;
     /* height: 90vh; */
     height: 100vh;
-    position: relative;
+    display: flex;
     text-align: center;
-    display: flex; 
+    
     align-items: center;
     justify-content: center;
 }
 .banner__title {
-    background-color: #393939;
+    border: 5px solid #5BACC3;
     color:white;
-    position: absolute;
-    /* width: 100px; */
-    padding: 30px 20px;
+    position: relative;
+    padding: 60px;
+    font-size: 4rem;
+    margin: 0px;
+    bottom: 20px;
+    right: 20px;
 }
+.banner__border {
+    background-color: #393939;    
+    position: absolute;
+}
+
 
 /* 
 sub nav in menu  
