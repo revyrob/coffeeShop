@@ -1,3 +1,6 @@
+// include global scss file
+@use './partials/global' as *;
+
 main {
     text-align: center;
 }

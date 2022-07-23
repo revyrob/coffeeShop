@@ -1,3 +1,6 @@
+// include global scss file
+@use './partials/global' as *;
+
 /* 
 button specifics for index
  */
@@ -8,19 +11,21 @@ button specifics for index
     padding: 10px 40px;
     bottom: 5px;
     right: 5px;
+    &:active {
+        bottom: 0px;
+        right: 0px;
+    }
 }
-a:hover.btn {
-    color: black;
-}
+
 .btn__border {
     background-color: #5BACC3;   
     position: absolute;
     padding: 12px 0px;
-    
 }
 .btn--view {
     display: inline-block;
 }
+
 /* 
 hero section
  */
@@ -56,6 +61,17 @@ panel section */
     margin: 5% 20%;
     text-align: center;
     font-weight: 400;
+    animation: flash 4s alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flash {
+    from {
+      background: #393939;
+    }
+    to {
+      background: #5BACC3;
+    }
 }
 .panel__title {
     display: block;
@@ -63,18 +79,22 @@ panel section */
 .panel--grey{
     text-align: center;
     align-items: center;
-    padding: 30px 0px;
+    padding-top: 30px;
 }
 .panel--grey img {
     height: 10rem;
+    
 }
 .panel__img  {
-    height: 5vh;
     padding: 20px 0px;
     padding-right: 30px;
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
     width: 50%;
+}
+.panel__img--img {
+    height: 5vh;
 }
 .panel.panel--white {
     display: flex;
@@ -102,8 +122,20 @@ panel section */
     position:absolute;
     bottom: 20px;
     right: 20px;
+    
+    &:hover {
+        animation: rotation 2s linear infinite;
+    }
 }
 
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
 .panel__descrip {
     padding-bottom: 5%;
     width: 50%;
@@ -160,9 +192,9 @@ card and card container css
 }
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 /* heavy font-weight for discount section */
@@ -177,6 +209,7 @@ footer specifics
     background-color:#FFF0ED;
     padding: 20px 0px;
     text-align: center;
+    position: relative;
 }
 .footer__section {
     display: inline-block;
@@ -191,6 +224,20 @@ footer specifics
     font-size: .75rem;
     padding: 5px 0px;
 }
+.footer__logo1 {
+    position: absolute;
+    left: -15px;
+    top: 5px;
+    height: 4rem;
+    
+}
+.footer__logo2 {
+    position: absolute;
+    right: -15px;
+    bottom: 5px;
+    height: 4rem;
+}
+
 
 
 

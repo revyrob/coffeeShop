@@ -1,0 +1,339 @@
+/* 
+general specifics for global elements 
+*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3 {
+  font-weight: 100;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans";
+}
+
+/* 
+navbar css 
+*/
+.primary__header {
+  display: flex;
+  background-color: #FFF0ED;
+  padding: 20px;
+}
+
+.navbar {
+  margin-left: auto;
+}
+
+.navbar__list-item {
+  padding: 0px 15px;
+}
+
+.navbar__image {
+  height: 30px;
+}
+
+.navbar__title {
+  font-size: 1.75rem;
+}
+
+.navbar__list {
+  margin-top: 7px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.primary__header a {
+  color: #393939;
+}
+
+/* 
+panel specifics global 
+*/
+.panel {
+  padding: 10px 0px 40px 0px;
+  width: 100%;
+}
+
+.panel__title {
+  padding: 10px 0px;
+  font-size: 2rem;
+}
+
+.panel__subtitle {
+  padding: 15px 0px 10px 0px;
+  font-size: 1.25rem;
+}
+
+.panel__price {
+  color: #5BACC3;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.panel--rose {
+  background-color: #FFF0ED;
+}
+
+.panel--grey {
+  background-color: #F7F7F7;
+}
+
+.panel--white {
+  background-color: white;
+}
+
+/* 
+anchor tags hover global 
+*/
+a:hover {
+  color: #5BACC3;
+}
+
+/* 
+button specifics for index
+ */
+.btn {
+  border: 2px solid #393939;
+  color: white;
+  position: relative;
+  padding: 10px 40px;
+  bottom: 5px;
+  right: 5px;
+}
+.btn:active {
+  bottom: 0px;
+  right: 0px;
+}
+
+a:hover.btn {
+  color: black;
+}
+
+.btn__border {
+  background-color: #5BACC3;
+  position: absolute;
+  padding: 12px 0px;
+}
+
+.btn--view {
+  display: inline-block;
+}
+
+/* 
+hero section
+ */
+.hero__img--banner {
+  height: 25rem;
+}
+
+.hero.panel--rose {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__descrip {
+  padding-bottom: 5%;
+  width: 50%;
+  font-size: 0.75rem;
+}
+
+.hero {
+  padding: 10px;
+  width: 100%;
+}
+
+.hero__title {
+  padding: 10px 0px;
+  font-size: 2rem;
+}
+
+/* 
+panel section */
+.panel__discount {
+  background-color: #393939;
+  color: white;
+  font-size: 1.75rem;
+  padding: 1rem;
+  margin: 5% 20%;
+  text-align: center;
+  font-weight: 400;
+}
+
+.panel__title {
+  display: block;
+}
+
+.panel--grey {
+  text-align: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.panel--grey img {
+  height: 10rem;
+}
+
+.panel__img {
+  height: 5vh;
+  padding: 20px 0px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.panel.panel--white {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+.panel--info {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.panel__div--background {
+  background-image: url("/assets/images/coldbrewbackground.png");
+  height: 370px;
+  width: 340px;
+  background-size: cover;
+  position: relative;
+}
+
+.panel__col--img {
+  height: 240px;
+  border: 5px solid #5BACC3;
+  padding: 60px 100px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.panel__descrip {
+  padding-bottom: 5%;
+  width: 50%;
+  font-size: 0.75rem;
+}
+
+/* 
+card and card container css
+  */
+.card {
+  display: inline-block;
+  border: 1px solid white;
+  margin: 20px;
+  border-radius: 2%;
+  box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+  width: 200px;
+  height: 250px;
+  text-align: center;
+  padding-top: 20px;
+  background-color: white;
+}
+
+.card__image {
+  background-color: white;
+}
+
+.card__subtitle {
+  padding: 15px 0px 10px 0px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.card__price {
+  color: #5BACC3;
+  font-size: 1rem;
+  padding: 10px;
+  text-align: right;
+  font-weight: 600;
+}
+
+.card__descrip {
+  font-size: 0.6rem;
+  text-align: left;
+  color: #909090;
+}
+
+.card__header {
+  padding-left: 10px;
+  background-color: #FFF0ED;
+}
+
+.card__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-radius: 2%;
+  background-color: #FFF0ED;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+
+/* heavy font-weight for discount section */
+span {
+  font-weight: 900;
+}
+
+/* 
+footer specifics 
+*/
+.footer {
+  background-color: #FFF0ED;
+  padding: 20px 0px;
+  text-align: center;
+  position: relative;
+}
+
+.footer__section {
+  display: inline-block;
+  padding-right: 10%;
+  text-align: left;
+  vertical-align: top;
+}
+
+.footer__subtitle {
+  padding: 15px 0px;
+}
+
+.footer__info {
+  font-size: 0.75rem;
+  padding: 5px 0px;
+}
+
+.footer__logo1 {
+  position: absolute;
+  left: -15px;
+  top: 5px;
+  height: 4rem;
+}
+
+.footer__logo2 {
+  position: absolute;
+  right: -15px;
+  bottom: 5px;
+  height: 4rem;
+}/*# sourceMappingURL=landing.css.map */

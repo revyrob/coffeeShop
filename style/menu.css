@@ -1,0 +1,170 @@
+/* 
+general specifics for global elements 
+*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3 {
+  font-weight: 100;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans";
+}
+
+/* 
+navbar css 
+*/
+.primary__header {
+  display: flex;
+  background-color: #FFF0ED;
+  padding: 20px;
+}
+
+.navbar {
+  margin-left: auto;
+}
+
+.navbar__list-item {
+  padding: 0px 15px;
+}
+
+.navbar__image {
+  height: 30px;
+}
+
+.navbar__title {
+  font-size: 1.75rem;
+}
+
+.navbar__list {
+  margin-top: 7px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.primary__header a {
+  color: #393939;
+}
+
+/* 
+panel specifics global 
+*/
+.panel {
+  padding: 10px 0px 40px 0px;
+  width: 100%;
+}
+
+.panel__title {
+  padding: 10px 0px;
+  font-size: 2rem;
+}
+
+.panel__subtitle {
+  padding: 15px 0px 10px 0px;
+  font-size: 1.25rem;
+}
+
+.panel__price {
+  color: #5BACC3;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.panel--rose {
+  background-color: #FFF0ED;
+}
+
+.panel--grey {
+  background-color: #F7F7F7;
+}
+
+.panel--white {
+  background-color: white;
+}
+
+/* 
+anchor tags hover global 
+*/
+a:hover {
+  color: #5BACC3;
+}
+
+main {
+  text-align: center;
+}
+
+/* 
+menu banner section 
+still having troubles making banner__title stay in the middle of the banner 
+background when chaning responsive screens
+*/
+.banner {
+  background-image: url("../assets/images/coffee-circle.jpg");
+  background-size: cover;
+  background-position: 100%;
+  /* height: 90vh; */
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner__title {
+  border: 5px solid #5BACC3;
+  color: white;
+  position: relative;
+  padding: 60px;
+  font-size: 4rem;
+  margin: 0px;
+  bottom: 20px;
+  right: 20px;
+}
+
+.banner__border {
+  background-color: #393939;
+  position: absolute;
+}
+
+/* 
+sub nav in menu  
+*/
+.sub-nav__list {
+  background-color: #393939;
+  text-align: center;
+  padding: 15px;
+}
+
+.sub-nav__list-item {
+  display: inline;
+  text-align: center;
+  padding: 0px 15px;
+  border-left: 3px solid #5BACC3;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* 
+panel description in menu
+ */
+.panel__descrip {
+  font-size: 1rem;
+  font-style: italic;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 5px;
+}/*# sourceMappingURL=menu.css.map */
