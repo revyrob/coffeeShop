@@ -117,10 +117,6 @@ button specifics for index
   right: 0px;
 }
 
-a:hover.btn {
-  color: black;
-}
-
 .btn__border {
   background-color: #5BACC3;
   position: absolute;
@@ -170,8 +166,29 @@ panel section */
   margin: 5% 20%;
   text-align: center;
   font-weight: 400;
+  -webkit-animation: flash 4s alternate;
+          animation: flash 4s alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
+@-webkit-keyframes flash {
+  from {
+    background: #393939;
+  }
+  to {
+    background: #5BACC3;
+  }
+}
+
+@keyframes flash {
+  from {
+    background: #393939;
+  }
+  to {
+    background: #5BACC3;
+  }
+}
 .panel__title {
   display: block;
 }
@@ -187,12 +204,16 @@ panel section */
 }
 
 .panel__img {
-  height: 5vh;
   padding: 20px 0px;
   padding-right: 30px;
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   width: 50%;
+}
+
+.panel__img--img {
+  height: 5vh;
 }
 
 .panel.panel--white {
@@ -224,6 +245,28 @@ panel section */
   position: absolute;
   bottom: 20px;
   right: 20px;
+}
+.panel__col--img:hover {
+  -webkit-animation: rotation 2s linear infinite;
+          animation: rotation 2s linear infinite;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 .panel__descrip {
   padding-bottom: 5%;
