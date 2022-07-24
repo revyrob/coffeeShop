@@ -218,19 +218,22 @@ span {
 footer specifics 
 */
 .footer {
+    display: flex;
+    justify-content: space-evenly;
     background-color:#FFF0ED;
-    padding: 1.25rem 0rem;
+    padding: 3rem 0rem;
     text-align: center;
     position: relative;
+    align-items: stretch;
 }
 .footer__section {
     display: inline-block;
     padding-right: 10%;
     text-align: left;
-    vertical-align: top;
 }
 .footer__subtitle {
     padding: 0.938rem 0rem;
+    font-size: 1.75rem;
 }
 .footer__info {
     font-size: .75rem;
@@ -248,6 +251,9 @@ footer specifics
     right: -0.938rem;
     bottom: 0.313rem;
     height: 4rem;
+}
+.footer img {
+    height: 2.5rem;
 }
 
 
