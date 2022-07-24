@@ -2,8 +2,8 @@
 general specifics for global elements 
 */
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0rem;
+  padding: 0rem;
 }
 
 li {
@@ -28,7 +28,7 @@ navbar css
 .primary__header {
   display: flex;
   background-color: #FFF0ED;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .navbar {
@@ -36,11 +36,11 @@ navbar css
 }
 
 .navbar__list-item {
-  padding: 0px 15px;
+  padding: 0rem 0.938rem;
 }
 
 .navbar__image {
-  height: 30px;
+  height: 2rem;
 }
 
 .navbar__title {
@@ -48,7 +48,7 @@ navbar css
 }
 
 .navbar__list {
-  margin-top: 7px;
+  margin-top: 0.438rem;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -62,24 +62,24 @@ navbar css
 panel specifics global 
 */
 .panel {
-  padding: 10px 0px 40px 0px;
+  padding: 0.625rem 0rem 2.5rem 0rem;
   width: 100%;
 }
 
 .panel__title {
-  padding: 10px 0px;
+  padding: 0.625rem 0rem;
   font-size: 2rem;
 }
 
 .panel__subtitle {
-  padding: 15px 0px 10px 0px;
+  padding: 0.938rem 0rem 0.625rem 0rem;
   font-size: 1.25rem;
 }
 
 .panel__price {
   color: #5BACC3;
   font-size: 1rem;
-  padding: 5px;
+  padding: 0.313rem;
 }
 
 .panel--rose {
@@ -108,19 +108,22 @@ button specifics for index
   border: 2px solid #393939;
   color: white;
   position: relative;
-  padding: 10px 40px;
-  bottom: 5px;
-  right: 5px;
+  padding: 0.625rem 2.5rem;
+  bottom: 0.313rem;
+  right: 0.313rem;
 }
 .btn:active {
-  bottom: 0px;
-  right: 0px;
+  bottom: 0rem;
+  right: 0rem;
+}
+.btn:hover {
+  color: white;
 }
 
 .btn__border {
   background-color: #5BACC3;
   position: absolute;
-  padding: 12px 0px;
+  padding: 0.75rem 0rem;
 }
 
 .btn--view {
@@ -141,19 +144,24 @@ hero section
 }
 
 .hero__descrip {
-  padding-bottom: 5%;
+  margin-bottom: 5%;
   width: 50%;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
 }
 
 .hero {
-  padding: 10px;
+  padding: 0.625rem;
   width: 100%;
 }
 
 .hero__title {
-  padding: 10px 0px;
-  font-size: 2rem;
+  padding: 0.313rem 0rem;
+  font-size: 3rem;
+  margin-bottom: 5%;
+}
+
+.hero__col--text {
+  width: 35rem;
 }
 
 /* 
@@ -166,8 +174,8 @@ panel section */
   margin: 5% 20%;
   text-align: center;
   font-weight: 400;
-  -webkit-animation: flash 4s alternate;
-          animation: flash 4s alternate;
+  -webkit-animation: flash 2.5s alternate;
+          animation: flash 2.5s alternate;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -191,21 +199,24 @@ panel section */
 }
 .panel__title {
   display: block;
+  font-size: 3rem;
 }
 
 .panel--grey {
   text-align: center;
-  align-items: center;
-  padding-top: 30px;
+  padding-top: 1.875rem;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .panel--grey img {
-  height: 10rem;
+  height: 13rem;
 }
 
 .panel__img {
-  padding: 20px 0px;
-  padding-right: 30px;
+  padding: 1.25rem 0rem;
+  padding-right: 1.875rem;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -227,24 +238,24 @@ panel section */
 .panel--info {
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 
 .panel__div--background {
   background-image: url("/assets/images/coldbrewbackground.png");
-  height: 370px;
-  width: 340px;
+  height: 23rem;
+  width: 21rem;
   background-size: cover;
   position: relative;
 }
 
 .panel__col--img {
-  height: 240px;
+  height: 15rem;
   border: 5px solid #5BACC3;
-  padding: 60px 100px;
+  padding: 3.75rem 6.25rem;
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 1.25rem;
+  right: 1.25rem;
 }
 .panel__col--img:hover {
   -webkit-animation: rotation 2s linear infinite;
@@ -280,13 +291,13 @@ card and card container css
 .card {
   display: inline-block;
   border: 1px solid white;
-  margin: 20px;
+  margin: 1.25rem;
   border-radius: 2%;
   box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
-  width: 200px;
-  height: 250px;
+  width: 18rem;
+  height: 22rem;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 1.25rem;
   background-color: white;
 }
 
@@ -295,7 +306,7 @@ card and card container css
 }
 
 .card__subtitle {
-  padding: 15px 0px 10px 0px;
+  padding: 0.938rem 0rem 0.625rem 0rem;
   font-size: 1rem;
   text-align: left;
 }
@@ -303,7 +314,7 @@ card and card container css
 .card__price {
   color: #5BACC3;
   font-size: 1rem;
-  padding: 10px;
+  padding: 0.625rem;
   text-align: right;
   font-weight: 600;
 }
@@ -315,7 +326,7 @@ card and card container css
 }
 
 .card__header {
-  padding-left: 10px;
+  padding-left: 0.625rem;
   background-color: #FFF0ED;
 }
 
@@ -323,17 +334,18 @@ card and card container css
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 16px;
-  padding-top: 16px;
+  margin-bottom: 0.6rem;
+  margin-top: 0.625rem;
   border-radius: 2%;
   background-color: #FFF0ED;
+  height: 8.2rem;
 }
 
 .container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
 }
 
 /* heavy font-weight for discount section */
@@ -346,7 +358,7 @@ footer specifics
 */
 .footer {
   background-color: #FFF0ED;
-  padding: 20px 0px;
+  padding: 1.25rem 0rem;
   text-align: center;
   position: relative;
 }
@@ -359,24 +371,24 @@ footer specifics
 }
 
 .footer__subtitle {
-  padding: 15px 0px;
+  padding: 0.938rem 0rem;
 }
 
 .footer__info {
   font-size: 0.75rem;
-  padding: 5px 0px;
+  padding: 0.313rem 0rem;
 }
 
 .footer__logo1 {
   position: absolute;
-  left: -15px;
-  top: 5px;
+  left: -0.938rem;
+  top: 0.313rem;
   height: 4rem;
 }
 
 .footer__logo2 {
   position: absolute;
-  right: -15px;
-  bottom: 5px;
+  right: -0.938rem;
+  bottom: 0.313rem;
   height: 4rem;
 }/*# sourceMappingURL=landing.css.map */

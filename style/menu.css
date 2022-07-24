@@ -2,8 +2,8 @@
 general specifics for global elements 
 */
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0rem;
+  padding: 0rem;
 }
 
 li {
@@ -28,7 +28,7 @@ navbar css
 .primary__header {
   display: flex;
   background-color: #FFF0ED;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .navbar {
@@ -36,11 +36,11 @@ navbar css
 }
 
 .navbar__list-item {
-  padding: 0px 15px;
+  padding: 0rem 0.938rem;
 }
 
 .navbar__image {
-  height: 30px;
+  height: 2rem;
 }
 
 .navbar__title {
@@ -48,7 +48,7 @@ navbar css
 }
 
 .navbar__list {
-  margin-top: 7px;
+  margin-top: 0.438rem;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -62,24 +62,24 @@ navbar css
 panel specifics global 
 */
 .panel {
-  padding: 10px 0px 40px 0px;
+  padding: 0.625rem 0rem 2.5rem 0rem;
   width: 100%;
 }
 
 .panel__title {
-  padding: 10px 0px;
+  padding: 0.625rem 0rem;
   font-size: 2rem;
 }
 
 .panel__subtitle {
-  padding: 15px 0px 10px 0px;
+  padding: 0.938rem 0rem 0.625rem 0rem;
   font-size: 1.25rem;
 }
 
 .panel__price {
   color: #5BACC3;
   font-size: 1rem;
-  padding: 5px;
+  padding: 0.313rem;
 }
 
 .panel--rose {
