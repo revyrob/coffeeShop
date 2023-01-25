@@ -3,6 +3,8 @@ Assignment with Brainstation to use github, use HTMl, get practice with flexbox,
 
 ## 🚀 Demo
 https://revyrob.github.io/coffeeShop/
+![image 20](https://user-images.githubusercontent.com/66695865/214659585-2039c1e0-b47d-4f8d-a02d-ce0133b29fc4.png)
+
 
 ## 💻 Built with
 <li>HTML5</li>
